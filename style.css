@@ -11,12 +11,14 @@ body{
 nav{
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid #6f6f6f;
+    border-bottom: 0px solid #6f6f6f;
+    background-color: #00000069;
+    position: relative;
 }
 nav h1{
-    color: #717171;
+    color: #ee7b10;
     font-family: 'Playfair Display', serif;
     font-size: 30px;
 }
@@ -26,7 +28,7 @@ nav .onglets{
 }
 nav .onglets a{
     text-decoration: none;
-    color: #000;
+    color: rgb(233, 219, 219);
     margin-right: 10px;
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
@@ -43,6 +45,19 @@ header{
 }
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99;
+    background-color: #00000069;
 }
 .bloc {
     position: relative;
