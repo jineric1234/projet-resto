@@ -43,21 +43,20 @@
         <source src="video/video.mp4" type="video/mp4">
     </video>
 </div>-->
-    <nav>
-        
-        <a href="#">CHEF JIN</a>
-        
-        <div class="onglets">
-           
-            
-            <a href="#">Home</a>
-            <a href="#produits">Nos produits</a>
-            <a href="#contact">Contact</a>
+    <nav class = "navbar">
+        <a href="#" class = "logo">CHEF JIN</a>         
+            <div class="nav-links">
+                <ul> 
+                    <li> <a href="#">Home</a></li>
+                    <li><a href="#produits">Nos produits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <img class="menu" src="/img/Hamburger_icon.svg.png" alt="menu hamburger">
                             <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
 
-        </div>
         <span class="glf-button" data-glf-cuid="5cdef11a-38cc-422d-a79d-e21307bee29e"  > Voir Menu & Commander</span>
-<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+        <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
     </nav>
 
     <header>
@@ -138,4 +137,12 @@
         <p id="contact">Contact : 08 19 17 278 1 | &copy; 2021, Burgure.</p>
     </footer>
 </body>
+<script>
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
 </html>
